@@ -42,10 +42,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--WHITE);
 }
 .ico-menu {
-  fill: currentColor;
+  fill: var(--WHITE);
 }
 .header-one {
   font-family: "Quicksand", sans-serif;
