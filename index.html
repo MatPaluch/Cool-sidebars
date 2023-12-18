@@ -2,16 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cool Sidebars</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
+    <aside class="asside" id="mojElement">
+      <div>
+        <h1 class="head-menu">MENU</h1>
+        <ul class="hom menu-list">
+          <li>
+            <a href="" class="list-element">Home</a>
+          </li>
+          <li><a href="" class="list-element">Search</a></li>
+          <li><a href="" class="list-element">Contact</a></li>
+        </ul>
+      </div>
+    </aside>
+    <div onclick="usunKlase()" class="rightside" id="aside" width="100%"></div>
     <main>
-      <section>
-        <nav></nav>
-      </section>
-      <section>
-        <h1>Welcome Home</h1>
+      <header class="body-head">
+        <div class="container">
+          <button id="mojPrzycisk" class="menu">
+            <svg width="24px" height="24px" class="ico-menu">
+              <use href="/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="container">
+        <h1 class="header-one">Welcome Home</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat optio
           aspernatur necessitatibus corrupti enim officia doloremque? Ipsa id
@@ -19,25 +50,25 @@
           optio voluptatem tenetur!
         </p>
       </section>
-      <section>
+      <section class="container">
         <div>
-          <ul>
+          <ul class="con-list">
             <li>
-              <div></div>
+              <div class="div-1 list"></div>
             </li>
             <li>
-              <div></div>
+              <div class="div-2 list"></div>
             </li>
             <li>
-              <div></div>
+              <div class="div-3 list"></div>
             </li>
             <li>
-              <div></div>
+              <div class="div-4 list"></div>
             </li>
           </ul>
         </div>
       </section>
-      <section>
+      <section class="container">
         <p>
           Si tú quieres cantar, yo te voy a enseñar Si quieres venir a mi casa
           Le digo a mi mamá que diga a tu mamá Que deje venirte mi casa Tengo un
@@ -49,9 +80,15 @@
           bum, bum, bum Chipi chipi chapa chapa Dubi dubi daba daba Mágico mi
           dubi dubi Bum
         </p>
+        <div class="message">
+          <a href="" class="mess-rect">
+            <svg width="32px" height="32px" class="ico-mess">
+              <use href="./icons.svg#icon-message"></use>
+            </svg>
+          </a>
+        </div>
       </section>
-      <div><img src=" ""/></div>
     </main>
-    <aside></aside>
+    <script src="./script.js"></script>
   </body>
 </html>
