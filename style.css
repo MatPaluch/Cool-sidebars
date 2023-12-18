@@ -1,0 +1,143 @@
+:root {
+  --WHITE: #fff;
+  --HEAVEN-BLUE: #8deaff;
+  --SOFT-BLUE: #8db1ff;
+  --BLUE: #5b96ff;
+  --DARKER-BLUE: #725bff;
+  --VIOLET: #c45bff;
+  --PINK: #ff5b96;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+main {
+  position: absolute;
+}
+.body-head {
+  background-color: var(--PINK);
+}
+.container {
+  max-width: 1000px;
+  padding: 30px;
+  margin-left: 0;
+  margin-right: auto;
+}
+.menu {
+  background-color: var(--DARKER-BLUE);
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--WHITE);
+}
+.ico-menu {
+  fill: currentColor;
+}
+.header-one {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 40px;
+}
+.con-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.list {
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+}
+.div-1 {
+  background-color: var(--DARKER-BLUE);
+}
+.div-2 {
+  background-color: var(--HEAVEN-BLUE);
+}
+.div-3 {
+  background-color: var(--BLUE);
+}
+.div-4 {
+  background-color: var(--SOFT-BLUE);
+}
+.message {
+  display: flex;
+  justify-content: end;
+  margin: 40px;
+}
+.mess-rect {
+  color: var(--WHITE);
+  background-color: var(--DARKER-BLUE);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.ico-mess {
+  fill: currentColor;
+}
+body {
+  display: flex;
+}
+.asside {
+  background-color: var(--PINK);
+  width: 300px;
+  padding: 50px;
+  z-index: 1;
+  height: 1000px;
+  position: relative;
+  transform: translateX(-100%);
+  transition: transform 500ms;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.head-menu {
+  margin-bottom: 50px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: padding 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.list-element:hover {
+  background-color: #ff93f0;
+  padding: 30px;
+  border-radius: 30px;
+}
+.mess-rect:hover {
+  transform: scale(1.2);
+}
+.mojaKlasa {
+  transform: translateX(0);
+  transition: transform 500ms;
+  box-shadow: 100px 0 100px -5px rgba(0, 0, 0, 0.2);
+}
+.rightside {
+  background-color: transparent;
+  width: 100vh;
+  z-index: 1;
+}
